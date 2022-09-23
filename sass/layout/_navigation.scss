@@ -1,0 +1,91 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__nav {
+    margin: auto;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__btn {
+    width: 146px;
+    text-align: center;
+  }
+
+  &__item {
+    margin: 0 1rem;
+  }
+
+  &__link {
+    font-size: $default-font-size;
+    font-family: inherit;
+    text-decoration: none;
+    color: $primary-blue-dark;
+  }
+
+  &__button {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: block;
+    top: 50%;
+    width: 4rem;
+    height: 2px;
+    background-color: blue;
+    position: relative;
+    transition: all 0.2s ease;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background-color: blue;
+      transition: all 0.2s ease;
+    }
+
+    &::after {
+      top: -1rem;
+    }
+
+    &::before {
+      top: 1rem;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked ~ &__button &__icon::after {
+    rotate: -135deg;
+    top: 0;
+  }
+
+  &__checkbox:checked ~ &__button &__icon::before {
+    top: 0;
+    rotate: 135deg;
+  }
+
+  //   &__checkbox:checked ~ &__icon::after {
+  //     rotate: 45deg;
+  //     top: 0;
+  //   }
+}

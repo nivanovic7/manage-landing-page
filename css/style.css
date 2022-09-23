@@ -1,0 +1,171 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem 5rem;
+  background-image: url(../../images/bg-simplify-section-desktop.svg); }
+
+.header,
+.navigation,
+.container {
+  max-width: 1440px;
+  margin: auto; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Be Vietnam Pro", sans-serif; }
+
+.heading--primary {
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #242d52; }
+
+.paragraph {
+  color: #9095a7;
+  line-height: 2.5rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  font-size: inherit;
+  padding: 1rem 2rem;
+  color: #ffefeb;
+  cursor: pointer;
+  border-radius: 2rem; }
+  .btn--red {
+    background-color: #b83e12; }
+
+.header {
+  display: flex; }
+  .header > * {
+    width: 50%; }
+  .header__text {
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .header__img {
+    background-size: cover;
+    text-align: right; }
+    .header__img img {
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      object-fit: scale-down; }
+  .header__paragraph {
+    max-width: 350px; }
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navigation__nav {
+    margin: auto; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+  .navigation__btn {
+    width: 146px;
+    text-align: center; }
+  .navigation__item {
+    margin: 0 1rem; }
+  .navigation__link {
+    font-size: 1.6rem;
+    font-family: inherit;
+    text-decoration: none;
+    color: #242d52; }
+  .navigation__button {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer; }
+  .navigation__icon {
+    display: block;
+    top: 50%;
+    width: 4rem;
+    height: 2px;
+    background-color: blue;
+    position: relative;
+    transition: all 0.2s ease; }
+    .navigation__icon::after, .navigation__icon::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background-color: blue;
+      transition: all 0.2s ease; }
+    .navigation__icon::after {
+      top: -1rem; }
+    .navigation__icon::before {
+      top: 1rem; }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+    rotate: -135deg;
+    top: 0; }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
+    top: 0;
+    rotate: 135deg; }
+
+.container {
+  background-image: url(../images/bg-simplify-section-desktop.svg); }

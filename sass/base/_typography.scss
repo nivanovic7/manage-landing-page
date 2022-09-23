@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+body {
+  font-size: $default-font-size;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.heading--primary {
+  font-size: 5rem;
+  line-height: 6rem;
+  color: $primary-blue-dark;
+}
+
+.paragraph {
+  color: $secondary-grayish-blue;
+  line-height: 2.5rem;
+}

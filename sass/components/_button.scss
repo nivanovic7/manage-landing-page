@@ -1,0 +1,14 @@
+.btn {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  font-size: inherit;
+  padding: 1rem 2rem;
+  color: $secondary-pale-red;
+  cursor: pointer;
+  border-radius: 2rem;
+
+  &--red {
+    background-color: rgb(184, 62, 18);
+  }
+}
