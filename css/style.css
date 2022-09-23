@@ -55,6 +55,11 @@ body {
   line-height: 6rem;
   color: #242d52; }
 
+.heading--secondary {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: #242d52; }
+
 .paragraph {
   color: #9095a7;
   line-height: 2.5rem; }
@@ -100,14 +105,16 @@ body {
   .article__heading {
     position: relative; }
   .article__heading::before {
+    width: 5rem;
+    padding: 0.2rem;
     position: absolute;
     left: -7.5rem;
     top: 0;
-    width: 5rem;
-    padding: 0.2rem;
-    background-color: #f25f3a;
-    text-align: center;
     translate: 0, -50%;
+    text-align: center;
+    color: #ffefeb;
+    font-weight: 400;
+    background-color: #f25f3a;
     border-radius: 2rem; }
   .article:nth-child(1) h3::before {
     content: "01"; }
@@ -198,3 +205,7 @@ body {
   display: flex; }
   .section--about > * {
     width: 50%; }
+  .section--about > *:nth-child(1) .heading--secondary {
+    max-width: 500px; }
+  .section--about > *:nth-child(1) .paragraph {
+    max-width: 400px; }

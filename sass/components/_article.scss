@@ -6,14 +6,16 @@
   }
 
   &__heading::before {
+    width: 5rem;
+    padding: 0.2rem;
     position: absolute;
     left: -7.5rem;
     top: 0;
-    width: 5rem;
-    padding: 0.2rem;
-    background-color: $primary-red-bright;
-    text-align: center;
     translate: 0, -50%;
+    text-align: center;
+    color: $secondary-pale-red;
+    font-weight: 400;
+    background-color: $primary-red-bright;
     border-radius: 2rem;
   }
   &:nth-child(1) h3::before {
