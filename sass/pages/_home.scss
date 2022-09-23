@@ -12,3 +12,13 @@
     max-width: 400px;
   }
 }
+
+.section--testimonials {
+  text-align: center;
+
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

@@ -123,6 +123,20 @@ body {
   .article:nth-child(3) h3::before {
     content: "03"; }
 
+.card {
+  width: 500px;
+  background-color: rgba(205, 209, 212, 0.466);
+  border-radius: 1rem;
+  padding: 4rem;
+  position: relative; }
+  .card__img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .header {
   display: flex; }
   .header > * {
@@ -209,3 +223,10 @@ body {
     max-width: 500px; }
   .section--about > *:nth-child(1) .paragraph {
     max-width: 400px; }
+
+.section--testimonials {
+  text-align: center; }
+  .section--testimonials .slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; }

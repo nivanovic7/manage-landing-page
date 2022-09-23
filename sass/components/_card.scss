@@ -1,0 +1,24 @@
+.card {
+  //   &:nth-child(1),
+  //   &:nth-child(3),
+  //   &:nth-child(2) {
+  //     display: none;
+  //   }
+
+  width: 500px;
+  background-color: rgba(205, 209, 212, 0.466);
+  border-radius: 1rem;
+  padding: 4rem;
+  //   margin: auto;
+
+  position: relative;
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
