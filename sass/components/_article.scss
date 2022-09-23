@@ -1,0 +1,28 @@
+.article {
+  padding-left: 8rem;
+
+  &__heading {
+    position: relative;
+  }
+
+  &__heading::before {
+    position: absolute;
+    left: -7.5rem;
+    top: 0;
+    width: 5rem;
+    padding: 0.2rem;
+    background-color: $primary-red-bright;
+    text-align: center;
+    translate: 0, -50%;
+    border-radius: 2rem;
+  }
+  &:nth-child(1) h3::before {
+    content: "01";
+  }
+  &:nth-child(2) h3::before {
+    content: "02";
+  }
+  &:nth-child(3) h3::before {
+    content: "03";
+  }
+}

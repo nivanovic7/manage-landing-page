@@ -27,13 +27,13 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem 5rem;
+  padding: 5rem 10rem;
   background-image: url(../../images/bg-simplify-section-desktop.svg);
 }
 
 .header,
 .navigation,
-.container {
+main {
   max-width: 1440px;
   margin: auto;
 }

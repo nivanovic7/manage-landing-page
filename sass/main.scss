@@ -6,13 +6,10 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/article";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
 
 @import "pages/home";
-
-.container {
-  background-image: url(../images/bg-simplify-section-desktop.svg);
-}
