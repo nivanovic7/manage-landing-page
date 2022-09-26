@@ -168,6 +168,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.footer {
+  background-color: #242d52;
+  margin-left: -10rem;
+  margin-right: -10rem;
+  padding: 5rem 10rem;
+  display: flex; }
+  .footer__logo {
+    background-color: white; }
+  .footer__nav {
+    columns: 2;
+    list-style: none; }
+
 .header {
   display: flex; }
   .header > * {

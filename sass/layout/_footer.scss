@@ -1,0 +1,16 @@
+.footer {
+  background-color: $primary-blue-dark;
+  margin-left: -10rem;
+  margin-right: -10rem;
+  padding: 5rem 10rem;
+  display: flex;
+
+  &__logo {
+    background-color: white;
+  }
+
+  &__nav {
+    columns: 2;
+    list-style: none;
+  }
+}
