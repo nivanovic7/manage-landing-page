@@ -15,10 +15,15 @@
 
 .section--testimonials {
   text-align: center;
+  overflow: hidden;
+  margin-left: -10rem;
+  margin-right: -10rem;
 
   .slider {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    position: relative;
+    padding: 3rem;
+    height: 250px;
+    width: 50%;
+    margin: auto;
   }
 }

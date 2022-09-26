@@ -11,4 +11,23 @@
   &--red {
     background-color: rgb(184, 62, 18);
   }
+
+  &__slide {
+    position: absolute;
+    color: rgb(83, 81, 81);
+    padding: 0.6rem 1.2rem;
+    border: 1px solid rgb(104, 104, 104);
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 0;
+    top: 50%;
+    translate: 0 -50%;
+    z-index: 100;
+
+    &:nth-child(1) {
+      left: 0;
+    }
+    &:nth-child(2) {
+      right: 0;
+    }
+  }
 }

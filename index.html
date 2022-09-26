@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
 
     <title>Manage landing page</title>
   </head>
@@ -118,8 +119,17 @@
         <h2 class="heading--secondary u-margin-bottom-big">
           What they’ve said
         </h2>
+
         <div class="slider">
+          <button class="btn btn__slide btn__slide--left" data-slide="left">
+            &leftarrow;
+          </button>
+          <button class="btn btn__slide btn__slide--right" data-slide="right">
+            &rightarrow;
+          </button>
+
           <div class="card">
+            <div class="card__content">
             <img
               class="card__img"
               src="./images/avatar-ali.png"
@@ -130,10 +140,13 @@
               “Manage has supercharged our team’s workflow. The ability to
               maintain visibility on larger milestones at all times keeps
               everyone motivated.”
-            </p>
+            </p>  
+            </div>
+            
           </div>
 
           <div class="card">
+            <div class="card__content">
             <img
               class="card__img"
               src="./images/avatar-anisha.png"
@@ -144,10 +157,13 @@
               “We have been able to cancel so many other subscriptions since
               using Manage. There is no more cross-channel confusion and
               everyone is much more focused.”
-            </p>
+            </p>  
+            </div>
+            
           </div>
 
           <div class="card">
+            <div class="card__content">
             <img
               class="card__img"
               src="./images/avatar-richard.png"
@@ -158,12 +174,15 @@
             </h3>
             <p class="paragraph">
               “Manage allows us to provide structure and process. It keeps us
-              organized and focused. I can’t stop recommending them to everyone
+              organized and focused  . I can’t stop recommending them to everyone
               I talk to!”
+            </div>
+            
             </p>
           </div>
 
           <div class="card">
+            <div class="card__content">
             <img
               class="card__img"
               src="./images/avatar-shanai.png"
@@ -175,7 +194,9 @@
             <p class="paragraph">
               “Their software allows us to track, manage and collaborate on our
               projects from anywhere. It keeps the whole team in-sync without
-              being intrusive.”
+              being intrusive.”  
+            </div>
+            
             </p>
           </div>
         </div>
