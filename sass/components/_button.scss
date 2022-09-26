@@ -10,18 +10,35 @@
 
   &--red {
     background-color: rgb(184, 62, 18);
+    &:hover {
+      background-color: $primary-red-bright;
+    }
+  }
+
+  &--white {
+    background-color: $secondary-pale-red;
+    color: $primary-red-bright;
+
+    &:hover {
+      color: $secondary-grayish-blue;
+    }
   }
 
   &__slide {
     position: absolute;
-    color: rgb(83, 81, 81);
+    color: rgba(83, 81, 81, 0.548);
     padding: 0.6rem 1.2rem;
-    border: 1px solid rgb(104, 104, 104);
-    background-color: rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(104, 104, 104, 0.336);
+    background-color: rgba(0, 0, 0, 0.082);
     border-radius: 0;
     top: 50%;
     translate: 0 -50%;
     z-index: 100;
+
+    &:hover {
+      color: rgba(83, 81, 81, 0.748);
+      background-color: rgba(0, 0, 0, 0.182);
+    }
 
     &:nth-child(1) {
       left: 0;

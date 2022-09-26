@@ -99,16 +99,26 @@ body {
   border-radius: 2rem; }
   .btn--red {
     background-color: #b83e12; }
+    .btn--red:hover {
+      background-color: #f25f3a; }
+  .btn--white {
+    background-color: #ffefeb;
+    color: #f25f3a; }
+    .btn--white:hover {
+      color: #9095a7; }
   .btn__slide {
     position: absolute;
-    color: #535151;
+    color: rgba(83, 81, 81, 0.548);
     padding: 0.6rem 1.2rem;
-    border: 1px solid #686868;
-    background-color: rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(104, 104, 104, 0.336);
+    background-color: rgba(0, 0, 0, 0.082);
     border-radius: 0;
     top: 50%;
     translate: 0 -50%;
     z-index: 100; }
+    .btn__slide:hover {
+      color: rgba(83, 81, 81, 0.748);
+      background-color: rgba(0, 0, 0, 0.182); }
     .btn__slide:nth-child(1) {
       left: 0; }
     .btn__slide:nth-child(2) {
@@ -256,3 +266,17 @@ body {
     height: 250px;
     width: 50%;
     margin: auto; }
+
+.section--cta {
+  background-color: #f25f3a;
+  margin-left: -10rem;
+  margin-right: -10rem;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../../images/bg-simplify-section-desktop.svg); }
+  .section--cta .heading--secondary {
+    max-width: 50rem;
+    color: #ffefeb; }
+  .section--cta .btn {
+    align-self: flex-end; }

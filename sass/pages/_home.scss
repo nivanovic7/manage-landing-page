@@ -27,3 +27,22 @@
     margin: auto;
   }
 }
+
+.section--cta {
+  background-color: $primary-red-bright;
+  margin-left: -10rem;
+  margin-right: -10rem;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../../images/bg-simplify-section-desktop.svg);
+
+  .heading--secondary {
+    max-width: 50rem;
+    color: $secondary-pale-red;
+  }
+
+  .btn {
+    align-self: flex-end;
+  }
+}
