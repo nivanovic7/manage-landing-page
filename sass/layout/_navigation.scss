@@ -12,10 +12,14 @@
     display: flex;
     justify-content: center;
     position: relative;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__btn {
-    width: 146px;
+    min-width: 146px;
     text-align: center;
   }
 
@@ -28,6 +32,10 @@
     font-family: inherit;
     text-decoration: none;
     color: $primary-blue-dark;
+  }
+
+  &__link:hover {
+    color: $secondary-grayish-blue;
   }
 
   &__button {

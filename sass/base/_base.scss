@@ -27,8 +27,12 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 5rem 10rem;
+  padding: 5rem 10rem 0;
   background-image: url(../../images/bg-simplify-section-desktop.svg);
+
+  @include respond(tab-port) {
+    padding: 3rem 1rem 0;
+  }
 }
 
 .header,
