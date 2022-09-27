@@ -1,16 +1,81 @@
 .footer {
-  background-color: $primary-blue-dark;
+  background-color: $secondary-very-dark-blue;
   margin-left: -10rem;
   margin-right: -10rem;
   padding: 5rem 10rem;
   display: flex;
+  justify-content: flex-end;
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-icons {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        transition: all 0.3s ease;
+      }
+
+      img:hover {
+        scale: 1.5;
+      }
+    }
+  }
 
   &__logo {
     background-color: white;
   }
 
+  &__navigation {
+    margin: auto;
+  }
   &__nav {
     columns: 2;
+    column-gap: 5rem;
     list-style: none;
+    color: $secondary-pale-red;
+
+    &-item {
+      margin-bottom: 2rem;
+    }
+
+    &-link:hover {
+      color: $primary-red-bright;
+      cursor: pointer;
+    }
+  }
+
+  &__form {
+    position: relative;
+
+    & > * {
+      border: none;
+    }
+
+    input {
+      display: inline-block;
+      font-size: inherit;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      font-size: 1.3rem;
+    }
+
+    label {
+      position: absolute;
+      left: 2rem;
+      color: $secondary-pale-red;
+      top: 2rem;
+      opacity: 0;
+      font-size: 1.2rem;
+      transition: all.3s;
+    }
+
+    input:not(:placeholder-shown) ~ label {
+      top: 4rem;
+      opacity: 1;
+    }
   }
 }
