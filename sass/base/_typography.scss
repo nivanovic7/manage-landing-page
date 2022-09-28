@@ -9,6 +9,9 @@ body {
   font-size: 5rem;
   line-height: 6rem;
   color: $primary-blue-dark;
+
+  @include respond(tab-port) {
+  }
 }
 
 .heading--secondary {

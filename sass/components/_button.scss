@@ -8,6 +8,11 @@
   cursor: pointer;
   border-radius: 2rem;
 
+  @include respond(tab-port) {
+    padding: 1.5rem 3rem;
+    font-size: inherit;
+  }
+
   &--red {
     background-color: rgb(184, 62, 18);
     &:hover {
