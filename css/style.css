@@ -144,7 +144,7 @@ body {
   .article__heading::before {
     width: 5rem;
     position: absolute;
-    left: -7.5rem;
+    left: -8rem;
     top: 0;
     bottom: 0;
     text-align: center;
@@ -321,7 +321,8 @@ body {
 .navigation {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .navigation__nav {
     margin: auto; }
   .navigation__list {
@@ -335,6 +336,9 @@ body {
   .navigation__btn {
     min-width: 146px;
     text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__btn {
+        display: none; } }
   .navigation__item {
     margin: 0 1rem; }
   .navigation__link {
@@ -342,35 +346,55 @@ body {
     font-family: inherit;
     text-decoration: none;
     color: #242d52; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__link {
+        padding: 1rem;
+        font-size: 2.5rem;
+        display: block; } }
   .navigation__link:hover {
     color: #9095a7; }
   .navigation__button {
-    display: none;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer; }
+    display: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__button {
+        display: block;
+        width: 5rem;
+        height: 120%;
+        position: absolute;
+        top: -10%;
+        right: 0rem; } }
   .navigation__icon {
     display: block;
     top: 50%;
-    width: 4rem;
+    width: 100%;
     height: 2px;
-    background-color: blue;
-    position: relative;
-    transition: all 0.2s ease; }
+    background-color: #242d52;
+    transition: all 0.2s ease;
+    position: relative; }
     .navigation__icon::after, .navigation__icon::before {
       content: "";
       width: 100%;
-      height: 100%;
+      height: 2px;
       position: absolute;
       left: 0;
-      background-color: blue;
-      transition: all 0.2s ease; }
+      background-color: #242d52;
+      transition: all 0.2s; }
     .navigation__icon::after {
-      top: -1rem; }
+      top: -1.5rem; }
     .navigation__icon::before {
-      top: 1rem; }
+      top: 1.5rem; }
   .navigation__checkbox {
     display: none; }
+  .navigation__checkbox:checked ~ .navigation__nav > .navigation__list {
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    padding: 6rem 0;
+    border-radius: 3px;
+    text-align: center;
+    background-color: yellow; }
   .navigation__checkbox:checked ~ .navigation__button .navigation__icon {
     background-color: transparent; }
   .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {

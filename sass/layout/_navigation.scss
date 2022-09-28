@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__nav {
     margin: auto;
@@ -21,6 +22,10 @@
   &__btn {
     min-width: 146px;
     text-align: center;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__item {
@@ -32,6 +37,12 @@
     font-family: inherit;
     text-decoration: none;
     color: $primary-blue-dark;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+      font-size: 2.5rem;
+      display: block;
+    }
   }
 
   &__link:hover {
@@ -40,42 +51,61 @@
 
   &__button {
     display: none;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
+
+    @include respond(tab-port) {
+      display: block;
+      width: 5rem;
+      height: 120%;
+      position: absolute;
+      top: -10%;
+      right: 0rem;
+    }
   }
 
   &__icon {
     display: block;
     top: 50%;
-    width: 4rem;
+    width: 100%;
     height: 2px;
-    background-color: blue;
-    position: relative;
+    background-color: $primary-blue-dark;
     transition: all 0.2s ease;
+    position: relative;
 
     &::after,
     &::before {
       content: "";
       width: 100%;
-      height: 100%;
+      height: 2px;
       position: absolute;
       left: 0;
-      background-color: blue;
-      transition: all 0.2s ease;
+      background-color: $primary-blue-dark;
+
+      transition: all 0.2s;
     }
 
     &::after {
-      top: -1rem;
+      top: -1.5rem;
     }
 
     &::before {
-      top: 1rem;
+      top: 1.5rem;
     }
   }
 
   &__checkbox {
     display: none;
+  }
+
+  &__checkbox:checked ~ &__nav > &__list {
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    padding: 6rem 0;
+    border-radius: 3px;
+    text-align: center;
+    background-color: yellow;
   }
 
   &__checkbox:checked ~ &__button &__icon {
